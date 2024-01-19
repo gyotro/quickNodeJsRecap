@@ -52,12 +52,16 @@ routerCities.put('/:id', (req, res) => {
     return res.status(404).end()
   }
   let oldCity = dataTest.cities[index]
-  dataTest.cities[index].name = name || oldCity.name
+/*   dataTest.cities[index].name = name || oldCity.name
   dataTest.cities[index].country = country || oldCity.country
-  dataTest.cities[index].population = population || oldCity.population
+  dataTest.cities[index].population = population || oldCity.population */
+
+  // la misma operacion la podemos pbtener con esta linea de codigo
+  Object.assign(oldCity, req.body)
+
   //return res.send(JSON.stringify(dataTest.cities[index]))
   // con json() es como si hicieramos send(JSOIN.stringfy(...))
-  return res.json(dataTest.cities[index])
+  return res.json(oldCity)
 })
 
 routerCities.delete('/:id', (req, res) => {
