@@ -11,6 +11,7 @@ app.get( '/', ( req, res ) => {
 
 // con :name capturamos directamente la parte del URL despues de /cities/ y la colocamos en la variable name (el nombre podía ser cualquiera) 
 // se pueden utilizar mas parametros de busqueda /:nameCity/:country 
+// para tomar los query parameters la sintaxis es: req.query.<nombre_parametro>
 app.get( '/api/cities/:nameCity', ( req, res ) => {
     const nameCity = req.params.nameCity
     const resultados = dataTest.cities.filter( (city) => city.name === nameCity )
