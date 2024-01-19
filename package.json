@@ -1,17 +1,22 @@
 {
-  "name": "nodejs",
+  "name": "expressrecap",
   "version": "1.0.0",
-  "description": "",
+  "description": "express tutorial",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyotro/quickNodeJsRecap.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Giovanni DIntrono",
   "license": "ISC",
-  "dependencies": {
-    "@types/node": "^18.0.6",
-    "node-fetch": "^3.2.6",
-    "nodemon": "^3.0.3"
-  }
+  "bugs": {
+    "url": "https://github.com/gyotro/quickNodeJsRecap/issues"
+  },
+  "homepage": "https://github.com/gyotro/quickNodeJsRecap#readme"
 }
