@@ -1,0 +1,25 @@
+GET http://localhost:3000/api/cities/
+
+###
+
+POST http://localhost:3000/api/cities
+Content-Type: application/json
+
+ {
+    "id" : 4,
+    "name" : "Bari",
+    "country": "Italy",
+    "population": 400000
+ }
+
+###
+
+PUT http://localhost:3000/api/cities/4
+Content-Type: application/json
+
+ {
+    "country": "Puglia"
+ }
+
+###
+DELETE http://localhost:3000/api/cities/3
