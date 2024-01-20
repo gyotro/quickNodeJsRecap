@@ -10,3 +10,7 @@ item = [1, 2, 3, 4];
 console.log(item);
 item = 50;
 console.log(item);
+// puedo crear tmb un Array con varios tipos
+var miArray;
+miArray = [1, "string"];
+console.log(miArray);
