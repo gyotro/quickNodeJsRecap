@@ -1,0 +1,16 @@
+@api = http://localhost:3000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/1
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url" : "https://test.com/122334",
+    "title" : "Titolo 1",
+    "description" : "descrizione titolo 1 gyo!"
+}
