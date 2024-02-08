@@ -1,6 +1,6 @@
 // npx tsc --init --> para crear el tsconfig
 // npm run-script build 
-// em el package json colocado este codigo en scripts "build": "tsc"
+// em el package json colocar este codigo en scripts "build": "tsc"
 import express from "express";
 import app  from "./app";
 import './database'

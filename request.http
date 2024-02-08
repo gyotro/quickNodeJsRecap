@@ -3,14 +3,26 @@
 GET {{api}}/videos
 
 ###
-GET {{api}}/videos/1
+GET {{api}}/videos/65c510f7dd244d53259cef0e
 
 ###
 POST {{api}}/videos
 Content-Type: application/json
 
 {
-    "url" : "https://test.com/122334",
-    "title" : "Titolo 1",
-    "description" : "descrizione titolo 1 gyo!"
+    "url" : "https://test.com/122438",
+    "title" : "Titolo 4",
+    "description" : "descrizione titolo 4 gyo!"
+}
+
+###
+DELETE {{api}}/videos/65b169413778ead4b7264190
+
+###
+PUT {{api}}/videos/65c510f7dd244d53259cef0e
+Content-Type: application/json
+
+{
+    "title" : "Titolo 2 Upgrade",
+    "description" : "descrizione titolo 2 gyo upgraded!"
 }

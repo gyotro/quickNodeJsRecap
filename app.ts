@@ -2,6 +2,7 @@ import express from "express";
 import vid_routes from "./routes/videos.routes";
 import morgan from "morgan";
 import cors from "cors";
+import config from "./config";
 
 const router = vid_routes
 
@@ -15,6 +16,6 @@ app.use(morgan('dev'))
 app.use(vid_routes)
 // para que entienda formularios URL Encoded
 app.use(express.urlencoded({extended : false}))
-app.set('port', process.env.port || 3000)
+app.set('port', config.port)
 
-export default app
+export default app 
